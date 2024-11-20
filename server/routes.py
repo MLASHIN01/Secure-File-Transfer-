@@ -1,10 +1,9 @@
-# server/routes.py
 from flask import Blueprint, request, jsonify, send_from_directory
 import os
 from werkzeug.utils import secure_filename
 from server.config import upload_folder
 
-# Create a Blueprint for routes
+# Create a Blueprint for the routes
 routes = Blueprint('routes', __name__)
 
 # Ensure upload folder exists
@@ -32,13 +31,15 @@ def upload_file():
     else:
         return jsonify({'error': 'File type not allowed'}), 400
 
-# File download route
 @routes.route('/download/<filename>', methods=['GET'])
 def download_file(filename):
-    if not allowed_file(filename):
-        return jsonify({'error': 'File type not allowed'}), 400
+    # Construct the file path
     file_path = os.path.join(upload_folder, filename)
+    
+    # Check if the file exists
     if os.path.exists(file_path):
+        # Send the file to the client
         return send_from_directory(upload_folder, filename, as_attachment=True)
     else:
-        return jsonify({'error': 'File not found'}), 404
+        # Return an error if the file is not found
+        return jsonify({'error': f"File '{filename}' not found"}), 404
