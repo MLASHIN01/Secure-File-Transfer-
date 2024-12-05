@@ -1,7 +1,11 @@
 from flask import Blueprint, request, jsonify, send_from_directory
 import os
+import sys
 from werkzeug.utils import secure_filename
-from server.config import upload_folder
+from config import upload_folder
+
+# Add the project root to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Create a Blueprint for the routes
 routes = Blueprint('routes', __name__)

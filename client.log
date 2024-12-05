@@ -1,0 +1,11 @@
+2024-12-05 18:01:34,310 - Error encrypting file 'C:/Users/Marwan/Documents/Call of Duty/players/s.1.0.cod24.txt1': [Errno 22] Invalid argument: 'encrypted_C:/Users/Marwan/Documents/Call of Duty/players/s.1.0.cod24.txt1'
+2024-12-05 18:01:34,310 - Error uploading file 'C:/Users/Marwan/Documents/Call of Duty/players/s.1.0.cod24.txt1': [Errno 22] Invalid argument: 'encrypted_C:/Users/Marwan/Documents/Call of Duty/players/s.1.0.cod24.txt1'
+2024-12-05 18:02:55,274 - Error encrypting file 'C:/Users/Marwan/Desktop/FIlet-test.txt': [Errno 22] Invalid argument: 'encrypted_C:/Users/Marwan/Desktop/FIlet-test.txt'
+2024-12-05 18:02:55,275 - Error uploading file 'C:/Users/Marwan/Desktop/FIlet-test.txt': [Errno 22] Invalid argument: 'encrypted_C:/Users/Marwan/Desktop/FIlet-test.txt'
+2024-12-05 18:05:16,382 - File 'C:/Users/Marwan/Desktop/FIlet-test.txt' encrypted successfully as 'encrypted_FIlet-test.txt'.
+2024-12-05 18:05:16,382 - Encrypting file 'C:/Users/Marwan/Desktop/FIlet-test.txt' as 'encrypted_FIlet-test.txt' for upload.
+2024-12-05 18:05:20,471 - Error uploading file 'C:/Users/Marwan/Desktop/FIlet-test.txt': HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /upload (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000022BC5AF9250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-05 18:24:42,492 - File 'C:/Users/Marwan/Desktop/FIlet-test.txt' encrypted successfully as 'encrypted_FIlet-test.txt'.
+2024-12-05 18:24:42,492 - Encrypting file 'C:/Users/Marwan/Desktop/FIlet-test.txt' as 'encrypted_FIlet-test.txt' for upload.
+2024-12-05 18:24:44,570 - File 'encrypted_FIlet-test.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_FIlet-test.txt', 'message': 'File uploaded successfully'}.
+2024-12-05 18:25:49,702 - Failed to download file 'FIlet-test.txt': {'error': "File 'FIlet-test.txt' not found"}

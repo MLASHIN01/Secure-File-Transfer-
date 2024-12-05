@@ -61,7 +61,8 @@ def decrypt_file(input_file, output_file):
 # Upload file
 def upload_file(filename):
     try:
-        encrypted_file = f"encrypted_{filename}"
+        # Ensure the filename is not using an absolute path
+        encrypted_file = f"encrypted_{os.path.basename(filename)}"  # Using basename to get the file name only
         encrypt_file(filename, encrypted_file)
         logging.info(f"Encrypting file '{filename}' as '{encrypted_file}' for upload.")
 
