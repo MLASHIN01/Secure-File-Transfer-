@@ -9,3 +9,8 @@
 2024-12-05 18:24:42,492 - Encrypting file 'C:/Users/Marwan/Desktop/FIlet-test.txt' as 'encrypted_FIlet-test.txt' for upload.
 2024-12-05 18:24:44,570 - File 'encrypted_FIlet-test.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_FIlet-test.txt', 'message': 'File uploaded successfully'}.
 2024-12-05 18:25:49,702 - Failed to download file 'FIlet-test.txt': {'error': "File 'FIlet-test.txt' not found"}
+2024-12-05 19:17:06,933 - File 'C:/Users/Marwan/Desktop/FIlet-test.txt' encrypted successfully as 'encrypted_FIlet-test.txt'.
+2024-12-05 19:17:06,933 - Encrypting file 'C:/Users/Marwan/Desktop/FIlet-test.txt' as 'encrypted_FIlet-test.txt' for upload.
+2024-12-05 19:17:09,023 - File 'encrypted_FIlet-test.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_FIlet-test.txt', 'message': 'File uploaded successfully'}.
+2024-12-05 19:18:17,966 - File 'downloaded_encrypted_encrypted_FIlet-test.txt' decrypted successfully as 'decrypted_encrypted_FIlet-test.txt'.
+2024-12-05 19:18:17,966 - File 'encrypted_FIlet-test.txt' downloaded and decrypted as 'decrypted_encrypted_FIlet-test.txt'.
