@@ -40,3 +40,489 @@
 2024-12-05 18:24:44,569 - 127.0.0.1 - - [05/Dec/2024 18:24:44] "POST /upload HTTP/1.1" 200 -
 2024-12-05 18:25:49,702 - Request: GET https://localhost:5000/download/FIlet-test.txt
 2024-12-05 18:25:49,702 - 127.0.0.1 - - [05/Dec/2024 18:25:49] "[33mGET /download/FIlet-test.txt HTTP/1.1[0m" 404 -
+2024-12-05 19:17:09,022 - Request: POST https://localhost:5000/upload
+2024-12-05 19:17:09,023 - 127.0.0.1 - - [05/Dec/2024 19:17:09] "POST /upload HTTP/1.1" 200 -
+2024-12-05 19:18:17,714 - Request: GET https://localhost:5000/download/encrypted_FIlet-test.txt
+2024-12-05 19:18:17,754 - 127.0.0.1 - - [05/Dec/2024 19:18:17] "GET /download/encrypted_FIlet-test.txt HTTP/1.1" 200 -
+2024-12-06 19:03:59,209 - Request: POST https://localhost:5000/upload
+2024-12-06 19:03:59,211 - 127.0.0.1 - - [06/Dec/2024 19:03:59] "POST /upload HTTP/1.1" 200 -
+2024-12-06 19:05:24,885 - Request: GET https://localhost:5000/download/encrypted_file2
+2024-12-06 19:05:24,885 - 127.0.0.1 - - [06/Dec/2024 19:05:24] "[33mGET /download/encrypted_file2 HTTP/1.1[0m" 404 -
+2024-12-06 19:05:35,700 - Request: GET https://localhost:5000/download/encrypted_file2
+2024-12-06 19:05:35,716 - 127.0.0.1 - - [06/Dec/2024 19:05:35] "[33mGET /download/encrypted_file2 HTTP/1.1[0m" 404 -
+2024-12-06 19:06:37,590 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.103:5000
+2024-12-06 19:06:37,590 - [33mPress CTRL+C to quit[0m
+2024-12-06 19:08:16,362 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.103:5000
+2024-12-06 19:08:16,362 - [33mPress CTRL+C to quit[0m
+2024-12-06 19:08:23,359 - Request: GET https://localhost:5000/download/encrypted_file2.txt
+2024-12-06 19:08:23,400 - 127.0.0.1 - - [06/Dec/2024 19:08:23] "GET /download/encrypted_file2.txt HTTP/1.1" 200 -
+2024-12-06 19:10:04,236 - Request: POST https://localhost:5000/upload
+2024-12-06 19:10:04,237 - 127.0.0.1 - - [06/Dec/2024 19:10:04] "POST /upload HTTP/1.1" 200 -
+2024-12-06 19:14:39,102 - Request: POST https://localhost:5000/upload
+2024-12-06 19:14:39,103 - 127.0.0.1 - - [06/Dec/2024 19:14:39] "POST /upload HTTP/1.1" 200 -
+2024-12-06 19:24:16,912 - Request: POST https://localhost:5000/upload
+2024-12-06 19:24:16,932 - 127.0.0.1 - - [06/Dec/2024 19:24:16] "POST /upload HTTP/1.1" 200 -
+2024-12-06 19:35:05,837 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 19:35:05,837 - [33mPress CTRL+C to quit[0m
+2024-12-06 19:35:30,394 - Request: POST https://localhost:5000/upload
+2024-12-06 19:35:30,409 - 127.0.0.1 - - [06/Dec/2024 19:35:30] "POST /upload HTTP/1.1" 200 -
+2024-12-06 19:36:24,868 - Request: GET https://localhost:5000/download/file3.txt
+2024-12-06 19:36:24,911 - 127.0.0.1 - - [06/Dec/2024 19:36:24] "GET /download/file3.txt HTTP/1.1" 200 -
+2024-12-06 19:44:12,593 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 19:44:12,593 - [33mPress CTRL+C to quit[0m
+2024-12-06 19:44:25,780 - Request: GET https://localhost:5000/download/file3.txt
+2024-12-06 19:44:25,818 - 127.0.0.1 - - [06/Dec/2024 19:44:25] "GET /download/file3.txt HTTP/1.1" 200 -
+2024-12-06 19:49:26,140 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 19:49:26,140 - [33mPress CTRL+C to quit[0m
+2024-12-06 19:49:40,307 - Request: GET https://localhost:5000/download/file3.txt
+2024-12-06 19:49:40,349 - 127.0.0.1 - - [06/Dec/2024 19:49:40] "GET /download/file3.txt HTTP/1.1" 200 -
+2024-12-06 20:11:58,229 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 20:11:58,229 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:12:04,026 - Request: POST https://localhost:5000/upload
+2024-12-06 20:12:04,027 - 127.0.0.1 - - [06/Dec/2024 20:12:04] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:12:34,381 - Request: GET https://localhost:5000/download/file3.txt
+2024-12-06 20:12:34,424 - 127.0.0.1 - - [06/Dec/2024 20:12:34] "GET /download/file3.txt HTTP/1.1" 200 -
+2024-12-06 20:14:13,033 - Request: POST https://localhost:5000/upload
+2024-12-06 20:14:13,034 - 127.0.0.1 - - [06/Dec/2024 20:14:13] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:14:55,521 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 20:14:55,521 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:15:02,301 - Request: POST https://localhost:5000/upload
+2024-12-06 20:15:02,302 - 127.0.0.1 - - [06/Dec/2024 20:15:02] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:15:47,409 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-06 20:15:47,409 - 127.0.0.1 - - [06/Dec/2024 20:15:47] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-06 20:16:59,827 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-06 20:16:59,828 - 127.0.0.1 - - [06/Dec/2024 20:16:59] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-06 20:17:35,489 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.3:5000
+2024-12-06 20:17:35,489 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:17:56,963 - Request: POST https://localhost:5000/upload
+2024-12-06 20:17:56,964 - 127.0.0.1 - - [06/Dec/2024 20:17:56] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:18:23,341 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-06 20:18:23,342 - 127.0.0.1 - - [06/Dec/2024 20:18:23] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-06 20:19:12,670 - Request: GET https://localhost:5000/download/encryptes_TEST%20FILE.txt
+2024-12-06 20:19:12,671 - 127.0.0.1 - - [06/Dec/2024 20:19:12] "[33mGET /download/encryptes_TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-06 20:37:29,273 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 20:37:29,273 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:37:53,566 - Request: POST https://localhost:5000/upload
+2024-12-06 20:37:53,567 - 127.0.0.1 - - [06/Dec/2024 20:37:53] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:38:16,246 - Request: POST https://localhost:5000/upload
+2024-12-06 20:38:16,247 - 127.0.0.1 - - [06/Dec/2024 20:38:16] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:45:33,060 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 20:45:33,060 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:46:06,430 - Request: POST https://localhost:5000/upload
+2024-12-06 20:46:06,431 - 127.0.0.1 - - [06/Dec/2024 20:46:06] "POST /upload HTTP/1.1" 200 -
+2024-12-06 20:53:41,197 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 20:53:41,197 - [33mPress CTRL+C to quit[0m
+2024-12-06 20:54:02,089 - Request: POST https://localhost:5000/upload
+2024-12-06 20:54:02,090 - 127.0.0.1 - - [06/Dec/2024 20:54:02] "POST /upload HTTP/1.1" 200 -
+2024-12-06 21:01:29,256 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 21:01:29,256 - [33mPress CTRL+C to quit[0m
+2024-12-06 21:01:48,765 - Request: POST https://localhost:5000/upload
+2024-12-06 21:01:48,766 - 127.0.0.1 - - [06/Dec/2024 21:01:48] "POST /upload HTTP/1.1" 200 -
+2024-12-06 21:39:54,193 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 21:39:54,193 - [33mPress CTRL+C to quit[0m
+2024-12-06 21:39:59,944 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 21:39:59,944 - [33mPress CTRL+C to quit[0m
+2024-12-06 21:40:31,212 - Request: POST https://localhost:5000/upload
+2024-12-06 21:40:31,219 - 127.0.0.1 - - [06/Dec/2024 21:40:31] "POST /upload HTTP/1.1" 200 -
+2024-12-06 21:44:41,518 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 21:44:41,518 - [33mPress CTRL+C to quit[0m
+2024-12-06 21:45:05,714 - Request: POST https://localhost:5000/upload
+2024-12-06 21:45:05,721 - 127.0.0.1 - - [06/Dec/2024 21:45:05] "POST /upload HTTP/1.1" 200 -
+2024-12-06 21:54:11,116 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.102:5000
+2024-12-06 21:54:11,116 - [33mPress CTRL+C to quit[0m
+2024-12-06 21:54:59,395 - Request: POST https://localhost:5000/upload
+2024-12-06 21:54:59,402 - 127.0.0.1 - - [06/Dec/2024 21:54:59] "POST /upload HTTP/1.1" 200 -
+2024-12-06 21:55:35,913 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-06 21:55:35,913 - 127.0.0.1 - - [06/Dec/2024 21:55:35] "[33mGET /download/TEST_FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 15:40:06,444 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 15:40:06,444 - [33mPress CTRL+C to quit[0m
+2024-12-07 15:40:30,619 - Request: POST https://localhost:5000/upload
+2024-12-07 15:40:30,664 - 127.0.0.1 - - [07/Dec/2024 15:40:30] "POST /upload HTTP/1.1" 200 -
+2024-12-07 15:40:58,056 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-07 15:40:58,057 - 127.0.0.1 - - [07/Dec/2024 15:40:58] "[33mGET /download/TEST_FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 15:51:18,397 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 15:51:18,397 - [33mPress CTRL+C to quit[0m
+2024-12-07 15:51:33,654 - Request: POST https://localhost:5000/upload
+2024-12-07 15:51:33,661 - 127.0.0.1 - - [07/Dec/2024 15:51:33] "POST /upload HTTP/1.1" 200 -
+2024-12-07 15:51:56,334 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-07 15:51:56,334 - 127.0.0.1 - - [07/Dec/2024 15:51:56] "[33mGET /download/TEST_FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 15:52:12,160 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-07 15:52:12,160 - 127.0.0.1 - - [07/Dec/2024 15:52:12] "[33mGET /download/TEST_FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:11:19,549 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:11:19,549 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:11:36,043 - Request: POST https://localhost:5000/upload
+2024-12-07 16:11:36,054 - Filename mapping after upload: {'TEST_FILE.txt': {'internal_filename': 'TEST_FILE.txt', 'key': b'W0\xdf^\xfb\xeb\xf6$\x86\xb2\x81\x00@\xdd\xcf\xce\xb1\xa2\xce\xcc\x12#\t\x9d.-J\x99\x19\x00\x05\x13', 'iv': b':\x1f/j\x8b\xae\xd0F\x13\xc8x\xda\xda\xce\x11 '}}
+2024-12-07 16:11:36,055 - 127.0.0.1 - - [07/Dec/2024 16:11:36] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:11:59,948 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-07 16:11:59,949 - Exception on /download/TEST_FILE.txt [GET]
+Traceback (most recent call last):
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: download_file() missing 1 required positional argument: 'file_info'
+2024-12-07 16:11:59,949 - 127.0.0.1 - - [07/Dec/2024 16:11:59] "[35m[1mGET /download/TEST_FILE.txt HTTP/1.1[0m" 500 -
+2024-12-07 16:12:10,919 - Request: GET https://localhost:5000/download/TEST_FILE.txt
+2024-12-07 16:12:10,919 - Exception on /download/TEST_FILE.txt [GET]
+Traceback (most recent call last):
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GITHUB\Secure-File-Transfer-\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: download_file() missing 1 required positional argument: 'file_info'
+2024-12-07 16:12:10,919 - 127.0.0.1 - - [07/Dec/2024 16:12:10] "[35m[1mGET /download/TEST_FILE.txt HTTP/1.1[0m" 500 -
+2024-12-07 16:24:11,216 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:24:11,216 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:24:32,835 - Request: POST https://localhost:5000/upload
+2024-12-07 16:24:32,846 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b'i\xe9 \x12G=\x8c\xfb\xa0+\xcc\xa3\x0f\xf9\x86I\xdaK\xc0\x19\xdd\xf9i\xb1\xe1\x1a\xddT\xeeHT\x9e', 'iv': b'<\xcc\x11\xe6\x18\xe2\xbe\xf7\xaf\xb2\x18\xf1\x8b\xff=\xf9'}}
+2024-12-07 16:24:32,846 - 127.0.0.1 - - [07/Dec/2024 16:24:32] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:25:01,843 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:25:01,844 - 127.0.0.1 - - [07/Dec/2024 16:25:01] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:32:38,149 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:32:38,149 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:32:47,684 - Request: POST https://localhost:5000/upload
+2024-12-07 16:32:47,692 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b'4\xbfvB\x04\xf0\xea_7V\x08Yl\xe9\x83c\xe5\x99\x975\x1ama\xb0\xb9\x9e\xae}\xf7*[\x8e', 'iv': b'\xca\x15\x08\x93H?2^\xeft:;\x12\xd0\xd8\x8b'}}
+2024-12-07 16:32:47,692 - 127.0.0.1 - - [07/Dec/2024 16:32:47] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:34:17,435 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:34:17,436 - 127.0.0.1 - - [07/Dec/2024 16:34:17] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:34:25,594 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:34:25,595 - 127.0.0.1 - - [07/Dec/2024 16:34:25] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:36:37,250 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:36:37,251 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:36:51,809 - Request: POST https://localhost:5000/upload
+2024-12-07 16:36:51,816 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b"\xaa\x9bO\x83M\x07\xec\x8cv\xe2\x95\x0e5\xaawW2\xa5\x82\xa5T\xed'\xeb\x12\xf2\xa9s\x12\x96@\x1d", 'iv': b']Z\xd6ru\x92/h\xff\x83\xb5\xb9\xa6\xf83\xbd'}}
+2024-12-07 16:36:51,817 - 127.0.0.1 - - [07/Dec/2024 16:36:51] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:39:10,370 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:39:10,371 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:39:22,677 - Request: POST https://localhost:5000/upload
+2024-12-07 16:39:22,685 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b'\xc2\xb5-%\x86\x0b\x98\xdd\xc9\x14\xa7~\x99$\x92@\xf1\xf38%\xe6|\x9bw\x15\xe6\x0f\xdf\x91F\x81q', 'iv': b'\xea\xbb\xeb&($\xd55\xc3O{a\xe2\\\xe1p'}}
+2024-12-07 16:39:22,685 - 127.0.0.1 - - [07/Dec/2024 16:39:22] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:39:33,887 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:39:33,887 - 127.0.0.1 - - [07/Dec/2024 16:39:33] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:49:45,746 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 16:49:45,747 - [33mPress CTRL+C to quit[0m
+2024-12-07 16:49:55,273 - Request: POST https://localhost:5000/upload
+2024-12-07 16:49:55,281 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b'\xd4\x1c\xd6\xbb\x16\x059\\\x81\x02\r\x87h\x16\xe6~\xf0\xa3\x0c\xb6\xda\x14k\xb7\x8a\xcdv\x1b\x1cg\xd1\xca', 'iv': b'{\xc7JIv\x1b\xcb\x0b\x03\x8c*\x8bL\xa6\x87E'}}
+2024-12-07 16:49:55,282 - 127.0.0.1 - - [07/Dec/2024 16:49:55] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:50:03,775 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:50:03,776 - Serving file: server/uploads\TEST FILE.txt
+2024-12-07 16:50:03,776 - 127.0.0.1 - - [07/Dec/2024 16:50:03] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:51:44,592 - Request: GET https://localhost:5000/download/TEST%20FILE.txt
+2024-12-07 16:51:44,592 - Serving file: server/uploads\TEST FILE.txt
+2024-12-07 16:51:44,593 - 127.0.0.1 - - [07/Dec/2024 16:51:44] "[33mGET /download/TEST%20FILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 16:53:11,621 - Request: POST https://localhost:5000/upload
+2024-12-07 16:53:11,623 - Filename mapping after upload: {'TEST FILE.txt': {'internal_filename': 'TEST FILE.txt', 'key': b'\xd4\x1c\xd6\xbb\x16\x059\\\x81\x02\r\x87h\x16\xe6~\xf0\xa3\x0c\xb6\xda\x14k\xb7\x8a\xcdv\x1b\x1cg\xd1\xca', 'iv': b'{\xc7JIv\x1b\xcb\x0b\x03\x8c*\x8bL\xa6\x87E'}, 'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt', 'key': b'\x88\x8e!!\x9b\xd3\xa2\x12gd\x11*U<\xb2\x1e&\t[\xf8y\xba\xc0\xd2iv\xc1\xa51r\xcc\xb5', 'iv': b'\xab9\xe4e\xa6\xefNk\xd7\xef\x14\xf0n=\x15\x9f'}}
+2024-12-07 16:53:11,623 - 127.0.0.1 - - [07/Dec/2024 16:53:11] "POST /upload HTTP/1.1" 200 -
+2024-12-07 16:53:49,091 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 16:53:49,091 - Serving file: server/uploads\TESTFILE.txt
+2024-12-07 16:53:49,091 - 127.0.0.1 - - [07/Dec/2024 16:53:49] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:01:20,363 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:01:20,363 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:02:55,784 - Request: POST https://localhost:5000/upload
+2024-12-07 17:02:55,792 - Filename mapping after upload: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt', 'key': b'Z7\xfb\xd2\x80\x87%\x13\xd7\xa8s\xcd\tO\x9c\xf9\x9ea\x96\x95+\x9e\xac(\x92Tr\xf2"\xb8\x81\xce', 'iv': b'\xaf\x1d\xe5`\xd0c\xe7w|\x81\x80\x177\x15\xb0\xc5'}}
+2024-12-07 17:02:55,792 - 127.0.0.1 - - [07/Dec/2024 17:02:55] "POST /upload HTTP/1.1" 200 -
+2024-12-07 17:03:19,847 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:03:19,847 - Download request received for file: TESTFILE.txt
+2024-12-07 17:03:19,847 - Serving file: server/uploads\TESTFILE.txt
+2024-12-07 17:03:19,847 - 127.0.0.1 - - [07/Dec/2024 17:03:19] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:20:25,426 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:20:25,426 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:20:41,088 - Request: POST https://localhost:5000/upload
+2024-12-07 17:20:41,097 - Filename mapping after upload: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt', 'key': b"'\x07\xce\xd9\xfa\xab\x14J\xde}\xaf\x08\xbb`\x1ap\x90\xe2\xc6\x00\xcb]+\xcc72\xe4\xe0^\x04\x18A", 'iv': b'8mm\xea\x0f\xaa\x07\x1a\xb4\xb2\x93c\x94\xaeq\x13'}}
+2024-12-07 17:20:41,097 - 127.0.0.1 - - [07/Dec/2024 17:20:41] "POST /upload HTTP/1.1" 200 -
+2024-12-07 17:20:56,549 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:20:56,549 - Download request received for file: TESTFILE.txt
+2024-12-07 17:20:56,549 - Serving file: server/uploads\TESTFILE.txt
+2024-12-07 17:20:56,549 - 127.0.0.1 - - [07/Dec/2024 17:20:56] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:25:24,171 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:25:24,172 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:25:33,708 - Request: POST https://localhost:5000/upload
+2024-12-07 17:25:33,709 - Filename mapping after upload: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt', 'key': b'\xe6\x86\xfb\x06>\xe3\xf2.\xe5\x1d\xe4\xdc\xe1\xe9\x8d\r\xd8&\xde\xa9\xa9\x00\xe0Ad1\xf2\xda$\x19\xa7\x00', 'iv': b'sqGpRz\x85\xc3\xd1\xce\xb5\xf7\x16\x90\xb4\xae'}}
+2024-12-07 17:25:33,709 - 127.0.0.1 - - [07/Dec/2024 17:25:33] "POST /upload HTTP/1.1" 200 -
+2024-12-07 17:25:44,204 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:25:44,205 - Download request received for file: TESTFILE.txt
+2024-12-07 17:25:44,205 - File 'TESTFILE.txt' not found in uploads folder.
+2024-12-07 17:25:44,205 - 127.0.0.1 - - [07/Dec/2024 17:25:44] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:27:34,267 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:27:34,268 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:27:53,897 - Request: POST https://localhost:5000/upload
+2024-12-07 17:27:53,898 - Filename mapping after upload: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt', 'key': b'\xb9\x82\xec@\xb0\xc0\x12\xb3\xe2\xab\xd8\xe0\x98\x1f!\xaf\xfb\xd1\x9b\xf9\x10\xc5>\xee\xeb7\x1a\xf1\\\xd2\xa4\x1b', 'iv': b"U'\xb6<wwm4\xa4Ht\x14\xbeG\x15\xd4"}}
+2024-12-07 17:27:53,898 - 127.0.0.1 - - [07/Dec/2024 17:27:53] "POST /upload HTTP/1.1" 200 -
+2024-12-07 17:28:13,410 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:28:13,410 - Download request received for file: TESTFILE.txt
+2024-12-07 17:28:13,410 - Resolved file path: server\uploads\TESTFILE.txt
+2024-12-07 17:28:13,410 - File 'TESTFILE.txt' not found in uploads folder.
+2024-12-07 17:28:13,410 - 127.0.0.1 - - [07/Dec/2024 17:28:13] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:38:01,015 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:38:01,015 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:38:11,882 - Request: POST https://localhost:5000/upload
+2024-12-07 17:38:11,882 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 17:38:11,882 - 127.0.0.1 - - [07/Dec/2024 17:38:11] "POST /upload HTTP/1.1" 200 -
+2024-12-07 17:38:29,984 - Request: GET https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:38:29,984 - Download request received for file: TESTFILE.txt
+2024-12-07 17:38:29,984 - File 'TESTFILE.txt' not found in filename mapping.
+2024-12-07 17:38:29,984 - 127.0.0.1 - - [07/Dec/2024 17:38:29] "[33mGET /download/TESTFILE.txt HTTP/1.1[0m" 404 -
+2024-12-07 17:42:15,541 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 17:42:15,541 - [33mPress CTRL+C to quit[0m
+2024-12-07 17:42:53,507 - Request: POST https://localhost:5000/upload
+2024-12-07 17:42:53,507 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 17:42:53,507 - 127.0.0.1 - - [07/Dec/2024 17:42:53] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:21:20,571 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:21:20,571 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:22:23,449 - Request: POST https://localhost:5000/upload
+2024-12-07 18:22:23,481 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 18:22:23,481 - 127.0.0.1 - - [07/Dec/2024 18:22:23] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:27:11,842 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:27:11,842 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:36:15,472 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:36:15,472 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:36:26,984 - Request: POST https://localhost:5000/upload
+2024-12-07 18:36:26,984 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 18:36:26,984 - 127.0.0.1 - - [07/Dec/2024 18:36:26] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:37:16,129 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:37:16,129 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:37:40,479 - Request: POST https://localhost:5000/upload
+2024-12-07 18:37:40,484 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 18:37:40,484 - 127.0.0.1 - - [07/Dec/2024 18:37:40] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:46:36,670 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:46:36,670 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:46:48,272 - Request: POST https://localhost:5000/upload
+2024-12-07 18:46:48,272 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 18:46:48,272 - 127.0.0.1 - - [07/Dec/2024 18:46:48] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:47:05,295 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 18:47:05,295 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 18:47:05,295 - File 'TESTFILE.txt.enc' not found in filename mapping.
+2024-12-07 18:47:05,295 - 127.0.0.1 - - [07/Dec/2024 18:47:05] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 18:50:56,448 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:50:56,448 - [33mPress CTRL+C to quit[0m
+2024-12-07 18:53:12,712 - Request: POST https://localhost:5000/upload
+2024-12-07 18:53:12,712 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 18:53:12,712 - Updated filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': '52b89fe495bdef10616307b791877f716b28cecf5cef368753c026f8b9ea113e', 'iv': 'ae5208411bf4e5eb74ab7df0da59af4a'}}
+2024-12-07 18:53:12,712 - 127.0.0.1 - - [07/Dec/2024 18:53:12] "POST /upload HTTP/1.1" 200 -
+2024-12-07 18:59:16,720 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 18:59:16,720 - [33mPress CTRL+C to quit[0m
+2024-12-07 19:01:42,691 - Request: POST https://localhost:5000/upload
+2024-12-07 19:01:42,691 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 19:01:42,691 - Updated filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': 'b5e46e55143ab155062d876496ebfde10d8efc6f99a9273cefe234f4836ed84b', 'iv': 'f9b48d24a6ea37db59412be0b974f269'}}
+2024-12-07 19:01:42,691 - 127.0.0.1 - - [07/Dec/2024 19:01:42] "POST /upload HTTP/1.1" 200 -
+2024-12-07 19:08:40,322 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 19:08:40,322 - [33mPress CTRL+C to quit[0m
+2024-12-07 19:10:55,670 - Request: POST https://localhost:5000/upload
+2024-12-07 19:10:55,670 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 19:10:55,670 - Updated filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': 'f574dfc96d5064794af59f79d6bb1bf0819f82567c67c8fd062b7ca0e6b499a3', 'iv': '1f52cdd2c19b8d6791b2bb1efe742246'}}
+2024-12-07 19:10:55,670 - 127.0.0.1 - - [07/Dec/2024 19:10:55] "POST /upload HTTP/1.1" 200 -
+2024-12-07 19:16:59,407 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 19:16:59,407 - [33mPress CTRL+C to quit[0m
+2024-12-07 19:17:54,256 - Request: POST https://localhost:5000/upload
+2024-12-07 19:17:54,263 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 19:17:54,263 - 127.0.0.1 - - [07/Dec/2024 19:17:54] "POST /upload HTTP/1.1" 200 -
+2024-12-07 19:18:07,834 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:18:07,834 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 19:18:07,834 - File 'TESTFILE.txt.enc' not found in filename mapping.
+2024-12-07 19:18:07,834 - 127.0.0.1 - - [07/Dec/2024 19:18:07] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 19:20:25,696 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:20:25,696 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 19:20:25,696 - File 'TESTFILE.txt.enc' not found in filename mapping.
+2024-12-07 19:20:25,696 - 127.0.0.1 - - [07/Dec/2024 19:20:25] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 19:25:29,866 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 19:25:29,866 - [33mPress CTRL+C to quit[0m
+2024-12-07 19:25:52,624 - Request: POST https://localhost:5000/upload
+2024-12-07 19:25:52,633 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 19:25:52,633 - 127.0.0.1 - - [07/Dec/2024 19:25:52] "POST /upload HTTP/1.1" 200 -
+2024-12-07 19:26:01,128 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:26:01,128 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 19:26:01,128 - Resolved file path: server/uploads\TESTFILE.txt.enc
+2024-12-07 19:26:01,128 - 127.0.0.1 - - [07/Dec/2024 19:26:01] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 20:22:56,267 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 20:22:56,267 - [33mPress CTRL+C to quit[0m
+2024-12-07 20:23:18,149 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 20:23:18,149 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 20:23:18,149 - Resolved file path: server/uploads\TESTFILE.txt.enc
+2024-12-07 20:23:18,149 - 127.0.0.1 - - [07/Dec/2024 20:23:18] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 20:33:56,870 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 20:33:56,870 - [33mPress CTRL+C to quit[0m
+2024-12-07 20:34:18,931 - Request: POST https://localhost:5000/upload
+2024-12-07 20:34:18,931 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 20:34:18,931 - 127.0.0.1 - - [07/Dec/2024 20:34:18] "POST /upload HTTP/1.1" 200 -
+2024-12-07 20:34:42,833 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 20:34:42,833 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 20:34:42,833 - Checking mapping for original filename: TESTFILE.txt, internal filename: TESTFILE.txt.enc
+2024-12-07 20:34:42,833 - Resolved file path: server/uploads\TESTFILE.txt.enc
+2024-12-07 20:34:42,833 - 127.0.0.1 - - [07/Dec/2024 20:34:42] "[33mGET /download/TESTFILE.txt.enc HTTP/1.1[0m" 404 -
+2024-12-07 20:50:24,982 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 20:50:24,982 - [33mPress CTRL+C to quit[0m
+2024-12-07 20:50:33,729 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 20:50:33,729 - [33mPress CTRL+C to quit[0m
+2024-12-07 20:50:49,775 - Request: POST https://localhost:5000/upload
+2024-12-07 20:50:49,822 - Updated filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': '9796433fe57051a6206fc7ac65e87dc37781a04fd177a37215059ad2e4097323', 'iv': '72038bcb70e51f87cb071cd2281e9b97'}}
+2024-12-07 20:50:49,822 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 20:50:49,822 - 127.0.0.1 - - [07/Dec/2024 20:50:49] "POST /upload HTTP/1.1" 200 -
+2024-12-07 20:51:00,562 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 20:51:00,562 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 20:51:00,562 - Uploads folder path: d:\GITHUB\Secure-File-Transfer-\server\uploads
+2024-12-07 20:51:00,562 - Loaded filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': '9796433fe57051a6206fc7ac65e87dc37781a04fd177a37215059ad2e4097323', 'iv': '72038bcb70e51f87cb071cd2281e9b97'}}
+2024-12-07 20:51:00,562 - Resolved file path: d:\GITHUB\Secure-File-Transfer-\server\uploads\TESTFILE.txt.enc
+2024-12-07 20:51:00,594 - 127.0.0.1 - - [07/Dec/2024 20:51:00] "GET /download/TESTFILE.txt.enc HTTP/1.1" 200 -
+2024-12-07 21:05:41,536 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.68.101:5000
+2024-12-07 21:05:41,536 - [33mPress CTRL+C to quit[0m
+2024-12-07 21:06:02,436 - Request: POST https://localhost:5000/upload
+2024-12-07 21:06:02,436 - Updated filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': 'a09ebe054a3b47a16583298a1d2b0dfbb31d9c2d48413d631feae1b3b59722d2', 'iv': '67a085c058b3c1725053d455f8267e0f'}}
+2024-12-07 21:06:02,436 - File 'TESTFILE.txt' uploaded and encrypted successfully.
+2024-12-07 21:06:02,436 - 127.0.0.1 - - [07/Dec/2024 21:06:02] "POST /upload HTTP/1.1" 200 -
+2024-12-07 21:06:11,339 - Request: GET https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 21:06:11,339 - Download request received for file: TESTFILE.txt.enc
+2024-12-07 21:06:11,339 - Uploads folder path: d:\GITHUB\Secure-File-Transfer-\server\uploads
+2024-12-07 21:06:11,355 - Loaded filename_mapping: {'TESTFILE.txt': {'internal_filename': 'TESTFILE.txt.enc', 'key': 'a09ebe054a3b47a16583298a1d2b0dfbb31d9c2d48413d631feae1b3b59722d2', 'iv': '67a085c058b3c1725053d455f8267e0f'}}
+2024-12-07 21:06:11,355 - Resolved file path: d:\GITHUB\Secure-File-Transfer-\server\uploads\TESTFILE.txt.enc
+2024-12-07 21:06:11,387 - 127.0.0.1 - - [07/Dec/2024 21:06:11] "GET /download/TESTFILE.txt.enc HTTP/1.1" 200 -

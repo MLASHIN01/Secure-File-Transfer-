@@ -14,3 +14,275 @@
 2024-12-05 19:17:09,023 - File 'encrypted_FIlet-test.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_FIlet-test.txt', 'message': 'File uploaded successfully'}.
 2024-12-05 19:18:17,966 - File 'downloaded_encrypted_encrypted_FIlet-test.txt' decrypted successfully as 'decrypted_encrypted_FIlet-test.txt'.
 2024-12-05 19:18:17,966 - File 'encrypted_FIlet-test.txt' downloaded and decrypted as 'decrypted_encrypted_FIlet-test.txt'.
+2024-12-06 19:03:57,146 - File 'C:/Users/Marwan/Desktop/file2.txt' encrypted successfully as 'encrypted_file2.txt'.
+2024-12-06 19:03:57,146 - Encrypting file 'C:/Users/Marwan/Desktop/file2.txt' as 'encrypted_file2.txt' for upload.
+2024-12-06 19:03:59,211 - File 'encrypted_file2.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_file2.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 19:05:24,886 - Failed to download file 'encrypted_file2': {'error': "File 'encrypted_file2' not found"}
+2024-12-06 19:05:35,717 - Failed to download file 'encrypted_file2': {'error': "File 'encrypted_file2' not found"}
+2024-12-06 19:08:01,664 - Error downloading file 'encrypted_file2.txt': HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /download/encrypted_file2.txt (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001E1DF89FD40>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-06 19:08:23,426 - Error decrypting file 'downloaded_encrypted_encrypted_file2.txt': Invalid padding bytes.
+2024-12-06 19:08:23,426 - Error downloading file 'encrypted_file2.txt': Invalid padding bytes.
+2024-12-06 19:10:02,182 - File 'C:/Users/Marwan/Desktop/file2.txt' encrypted successfully as 'encrypted_file2.txt'.
+2024-12-06 19:10:02,182 - Encrypting file 'C:/Users/Marwan/Desktop/file2.txt' as 'encrypted_file2.txt' for upload.
+2024-12-06 19:10:04,238 - File 'encrypted_file2.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_file2.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 19:14:37,046 - File 'C:/Users/Marwan/Desktop/file3.txt' encrypted successfully as 'encrypted_file3.txt'.
+2024-12-06 19:14:37,046 - Encrypting file 'C:/Users/Marwan/Desktop/file3.txt' as 'encrypted_file3.txt' for upload.
+2024-12-06 19:14:39,103 - File 'encrypted_file3.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_file3.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 19:24:14,865 - File 'C:/Users/Marwan/Desktop/file3.txt' encrypted successfully as 'encrypted_file3.txt'.
+2024-12-06 19:24:14,865 - Encrypting file 'C:/Users/Marwan/Desktop/file3.txt' as 'encrypted_file3.txt' for upload.
+2024-12-06 19:24:16,932 - File 'encrypted_file3.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'encrypted_file3.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 19:35:28,334 - File 'C:/Users/Marwan/Desktop/file3.txt' encrypted successfully as 'D:\GITHUB\Secure-File-Transfer-\file3.txt'.
+2024-12-06 19:35:28,334 - File 'C:/Users/Marwan/Desktop/file3.txt' encrypted as 'D:\GITHUB\Secure-File-Transfer-\file3.txt' for upload.
+2024-12-06 19:35:30,410 - File 'D:\GITHUB\Secure-File-Transfer-\file3.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'file3.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 19:36:24,914 - Error decrypting file 'file3.txt': Invalid IV size (0) for CBC.
+2024-12-06 19:36:24,914 - Error downloading file 'file3.txt': Invalid IV size (0) for CBC.
+2024-12-06 19:44:25,819 - Encrypted file saved temporarily as 'C:\Users\Marwan\Desktop\encrypted_file3.txt'.
+2024-12-06 19:44:25,826 - Error decrypting file: Invalid padding bytes.
+2024-12-06 19:44:25,826 - Error downloading file 'file3.txt': Invalid padding bytes.
+2024-12-06 19:49:40,350 - Encrypted file saved temporarily as 'C:\Users\Marwan\Desktop\encrypted_file3.txt'.
+2024-12-06 19:49:40,351 - Error decrypting file: Invalid key size (16) for AES.
+2024-12-06 19:49:40,351 - Error downloading file 'file3.txt': Invalid key size (16) for AES.
+2024-12-06 20:12:01,957 - File 'C:/Users/Marwan/Desktop/file3.txt' encrypted as 'D:\GITHUB\Secure-File-Transfer-\file3.txt' for upload.
+2024-12-06 20:12:04,027 - File 'D:\GITHUB\Secure-File-Transfer-\file3.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'file3.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 20:12:34,425 - Encrypted file saved temporarily as 'C:\Users\Marwan\Desktop\encrypted_file3.txt'.
+2024-12-06 20:14:10,974 - File 'C:/Users/Marwan/Desktop/TEST FILE.txt' encrypted as 'D:\GITHUB\Secure-File-Transfer-\TEST FILE.txt' for upload.
+2024-12-06 20:14:13,034 - File 'D:\GITHUB\Secure-File-Transfer-\TEST FILE.txt' uploaded to 'https://localhost:5000/upload' with response: {'filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully'}.
+2024-12-06 20:15:02,302 - File uploaded successfully: {'filename': 'encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 20:15:47,409 - Download failed: {"error":"File 'TEST FILE.txt' not found"}
+
+2024-12-06 20:16:59,828 - Download failed: {"error":"File 'TEST FILE.txt' not found"}
+
+2024-12-06 20:17:56,965 - File uploaded successfully: {'filename': 'encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 20:18:23,342 - Download failed: {"error":"File 'TEST FILE.txt' not found"}
+
+2024-12-06 20:19:12,671 - Download failed: {"error":"File 'encryptes_TEST FILE.txt' not found"}
+
+2024-12-06 20:37:53,568 - File uploaded successfully: {'filename': 'encrypted_encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 20:38:16,248 - File uploaded successfully: {'filename': 'encrypted_encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 20:46:06,432 - File uploaded successfully: {'filename': 'encrypted_encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 20:54:02,091 - File uploaded successfully: {'filename': 'encrypted_encrypted_TEST_FILE.txt', 'message': 'File uploaded successfully'}
+2024-12-06 21:01:48,767 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-06 21:02:14,619 - Error during download: string indices must be integers, not 'str'
+2024-12-06 21:02:26,526 - Error during download: string indices must be integers, not 'str'
+2024-12-06 21:40:31,219 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-06 21:45:05,722 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-06 21:54:59,403 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-06 21:55:35,914 - Download failed: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 15:40:30,665 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-07 15:40:58,057 - Download failed: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 15:51:33,661 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-07 15:51:56,335 - Download failed: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 15:52:12,161 - Download failed: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:11:36,055 - File uploaded successfully: {'internal_filename': 'TEST_FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST_FILE.txt'}
+2024-12-07 16:11:59,950 - Download failed: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-07 16:12:10,920 - Download failed: <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+2024-12-07 16:24:32,847 - File uploaded successfully: {'internal_filename': 'TEST FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST FILE.txt'}
+2024-12-07 16:25:01,844 - Download failed: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:32:47,693 - File uploaded successfully: {'internal_filename': 'TEST FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST FILE.txt'}
+2024-12-07 16:34:17,436 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:34:25,595 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:36:51,817 - File uploaded successfully: {'internal_filename': 'TEST FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST FILE.txt'}
+2024-12-07 16:39:22,686 - File uploaded successfully: {'internal_filename': 'TEST FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST FILE.txt'}
+2024-12-07 16:39:33,888 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:49:55,282 - File uploaded successfully: {'internal_filename': 'TEST FILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TEST FILE.txt'}
+2024-12-07 16:49:55,283 - Uploaded file: C:/Users/Marwan/Desktop/TEST FILE.txt
+2024-12-07 16:50:03,777 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:50:03,777 - Downloaded and decrypted file: TEST FILE.txt
+2024-12-07 16:51:44,593 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:51:44,593 - Downloaded and decrypted file: TEST FILE.txt
+2024-12-07 16:53:11,624 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 16:53:11,624 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 16:53:49,092 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 16:53:49,092 - Downloaded and decrypted file: TESTFILE.txt
+2024-12-07 17:02:55,792 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:02:55,793 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 17:03:17,791 - Requesting download for file: TESTFILE.txt from https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:03:19,848 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 17:03:19,848 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 17:03:19,848 - Error during download: Download failed with status code 404
+2024-12-07 17:20:41,097 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:20:41,098 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 17:20:54,499 - Requesting download for file: TESTFILE.txt from https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:20:56,549 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 17:20:56,549 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 17:20:56,550 - Error during download: Download failed with status code 404
+2024-12-07 17:25:33,710 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:25:33,710 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 17:25:42,148 - Requesting download for file: TESTFILE.txt from https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:25:44,205 - Download failed: 404 - {"error":"File 'TESTFILE.txt' not found in uploads folder"}
+
+2024-12-07 17:25:44,205 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 17:25:44,205 - Error during download: Download failed with status code 404
+2024-12-07 17:27:53,899 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:27:53,899 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 17:28:11,346 - Requesting download for file: TESTFILE.txt from https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:28:13,411 - Download failed: 404 - {"error":"File 'TESTFILE.txt' not found in uploads folder"}
+
+2024-12-07 17:28:13,411 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 17:28:13,411 - Error during download: Download failed with status code 404
+2024-12-07 17:38:11,882 - File uploaded successfully: {'encrypted_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:38:11,882 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 17:38:27,950 - Requesting download for file: TESTFILE.txt from https://localhost:5000/download/TESTFILE.txt
+2024-12-07 17:38:29,984 - Download failed: 404 - {"error":"File 'TESTFILE.txt' not found in filename mapping"}
+
+2024-12-07 17:38:29,984 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 17:38:29,984 - Error during download: Download failed with status code 404
+2024-12-07 17:42:53,507 - File uploaded successfully: {'encrypted_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 17:42:53,507 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:22:23,481 - File uploaded successfully: {'encrypted_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 18:22:23,481 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:22:52,325 - Error during download: 'internal_filename'
+2024-12-07 18:27:34,628 - Retrieved metadata: {'original_filename': 'TESTFILE.txt', 'encrypted_filename': 'TESTFILE.txt.enc'}
+2024-12-07 18:27:34,628 - Error: 'internal_filename' not found in metadata.
+2024-12-07 18:33:14,438 - Error uploading file: Could not find a suitable TLS CA certificate bundle, invalid path: server/cert/cert.pem
+2024-12-07 18:33:14,438 - Error during upload: Could not find a suitable TLS CA certificate bundle, invalid path: server/cert/cert.pem
+2024-12-07 18:35:27,634 - Error uploading file: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /upload (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A107DCA180>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-07 18:35:27,634 - Error during upload: HTTPSConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /upload (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001A107DCA180>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-12-07 18:36:26,984 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 18:36:26,984 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:36:33,038 - Error: 'internal_filename' not found in metadata for 'TESTFILE.txt'.
+2024-12-07 18:37:40,484 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 18:37:40,484 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:46:46,237 - Using certificate for verification: server/cert/cert.pem
+2024-12-07 18:46:48,272 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 18:46:48,272 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:47:03,253 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 18:47:05,295 - Download failed: 404 - {"error":"File 'TESTFILE.txt.enc' not found in filename mapping"}
+
+2024-12-07 18:47:05,295 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 18:47:05,295 - Error during download: Download failed with status code 404
+2024-12-07 18:53:10,675 - Using certificate for verification: server/cert/cert.pem
+2024-12-07 18:53:12,712 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 18:53:12,712 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 18:53:21,252 - Error: File 'TESTFILE.txt.enc' not found in metadata.
+2024-12-07 19:01:42,691 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 19:01:42,691 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 19:01:49,644 - Error: File 'TESTFILE.txt.enc' not found in metadata.
+2024-12-07 19:10:55,670 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 19:10:55,670 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 19:11:08,383 - Error: File 'TESTFILE.txt.enc' not found in metadata.
+2024-12-07 19:11:21,253 - Error: File 'TESTFILE.txt.enc' not found in metadata.
+2024-12-07 19:17:54,263 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'iv': '74d87af39863a27458ef00295f969f62', 'key': '4dafadf90f77e583eb971ffe833e78756387e6e5f5b6fc894da85546006e8749', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 19:17:54,263 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 19:18:05,783 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:18:07,834 - Download failed: 404 - {"error":"File 'TESTFILE.txt.enc' not found in filename mapping"}
+
+2024-12-07 19:18:07,834 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 19:18:07,834 - Error during download: Download failed with status code 404
+2024-12-07 19:20:23,660 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:20:25,696 - Download failed: 404 - {"error":"File 'TESTFILE.txt.enc' not found in filename mapping"}
+
+2024-12-07 19:20:25,696 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 19:20:25,696 - Error during download: Download failed with status code 404
+2024-12-07 19:25:52,634 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'iv': '7679455ec53df1c5b5af6fd1decbbca3', 'key': 'ffe8338edd72cbb562f3855492b879da5e9c677164e882e50e191ddb2e95b47f', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 19:25:52,634 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 19:25:59,076 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 19:26:01,128 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 19:26:01,128 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 19:26:01,128 - Error during download: Download failed with status code 404
+2024-12-07 20:34:18,931 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'iv': '5c5497799351056604348289ad38f04e', 'key': '407924df12f02412743bdf1ab6dc2d36e543622311eed0c9a6ac74aaec9e5eaa', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 20:34:18,931 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 20:34:40,804 - Requesting download for internal filename: TESTFILE.txt.enc
+2024-12-07 20:34:40,804 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 20:34:42,833 - Download failed: 404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+2024-12-07 20:34:42,833 - Unexpected error during file download: Download failed with status code 404
+2024-12-07 20:34:42,833 - Error during download: Download failed with status code 404
+2024-12-07 20:50:49,822 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'iv': '72038bcb70e51f87cb071cd2281e9b97', 'key': '9796433fe57051a6206fc7ac65e87dc37781a04fd177a37215059ad2e4097323', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 20:50:49,822 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 20:50:58,516 - Requesting download for internal filename: TESTFILE.txt.enc
+2024-12-07 20:50:58,516 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 20:51:00,610 - Encrypted file saved temporarily at: C:\Users\Marwan\encrypted_TESTFILE.txt.enc
+2024-12-07 20:51:00,610 - Unexpected error during file download: key must be bytes-like
+2024-12-07 20:51:00,610 - Error during download: key must be bytes-like
+2024-12-07 21:06:02,436 - File uploaded successfully: {'internal_filename': 'TESTFILE.txt.enc', 'iv': '67a085c058b3c1725053d455f8267e0f', 'key': 'a09ebe054a3b47a16583298a1d2b0dfbb31d9c2d48413d631feae1b3b59722d2', 'message': 'File uploaded successfully', 'original_filename': 'TESTFILE.txt'}
+2024-12-07 21:06:02,436 - Uploaded file: C:/Users/Marwan/Desktop/WORK/TESTFILE.txt
+2024-12-07 21:06:09,298 - Requesting download for file: TESTFILE.txt.enc
+2024-12-07 21:06:09,298 - Requesting download for file: TESTFILE.txt.enc from https://localhost:5000/download/TESTFILE.txt.enc
+2024-12-07 21:06:11,387 - Encrypted file saved temporarily at: C:\Users\Marwan\encrypted_TESTFILE.txt.enc
+2024-12-07 21:06:11,387 - File downloaded and decrypted successfully: C:\Users\Marwan\Desktop\TESTFILE.txt
+2024-12-07 21:06:11,387 - Downloaded and decrypted file: TESTFILE.txt

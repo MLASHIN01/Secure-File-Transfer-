@@ -1,9 +1,9 @@
 # server/config.py
 import os
 
+base_dir = os.path.abspath(os.path.dirname(__file__))
 
-cert_path = "server/cert/cert.pem"  # Path to your certificate
-key_path = "server/cert/key.pem"    # Path to your private key
-upload_folder = "uploads/"          # Directory to store uploaded files
-max_content_length = 16 * 1024 * 1024  # 16 MB file upload limit
-upload_folder = os.path.join(os.path.dirname(__file__), "uploads")  # Example path
+cert_path = os.path.join(base_dir, "cert", "cert.pem")
+key_path = os.path.join(base_dir, "cert", "key.pem")
+upload_folder = os.path.join(base_dir, "uploads")
+max_content_length = 16 * 1024 * 1024  # 16 MB upload limit

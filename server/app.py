@@ -1,12 +1,14 @@
 from flask import Flask, request
+from routes import routes
 import logging
 import sys
 import os
-from routes import routes
-from server.config import cert_path, key_path, max_content_length
 
-# Add the project root to the Python path
+# Add the project root directory to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from server.routes import routes  # Correct import
+from server.config import cert_path, key_path, max_content_length
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -35,11 +37,4 @@ if __name__ == "__main__":
     print("Python Path:", sys.path)
 
     # Run the Flask server with HTTPS enabled
-    app.run(host="0.0.0.0", port=5000, ssl_context=(cert_path, key_path))
-
-
-# # Debugging the sys.path and current working directory
-# print("Current Working Directory:", os.getcwd())
-# print("Python Path:", sys.path)
-
-
+app.run(host="0.0.0.0", port=5000, ssl_context=("server/cert/cert.pem", "server/cert/key.pem"))

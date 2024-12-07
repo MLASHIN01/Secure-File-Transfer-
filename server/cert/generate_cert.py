@@ -1,3 +1,4 @@
+import os
 from cryptography import x509
 from cryptography.x509.oid import NameOID
 from cryptography.hazmat.primitives import serialization
@@ -5,6 +6,14 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.hashes import SHA256
 from cryptography.hazmat.backends import default_backend
 from datetime import datetime, timedelta, timezone
+
+# Define the output directory
+output_dir = os.path.join("server", "cert")
+os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+
+# Paths for the certificate and key
+key_path = os.path.join(output_dir, "key.pem")
+cert_path = os.path.join(output_dir, "cert.pem")
 
 # Create RSA private key
 private_key = rsa.generate_private_key(
@@ -14,7 +23,7 @@ private_key = rsa.generate_private_key(
 )
 
 # Save the private key to a file
-with open("key.pem", "wb") as key_file:
+with open(key_path, "wb") as key_file:
     key_file.write(
         private_key.private_bytes(
             encoding=serialization.Encoding.PEM,
@@ -51,7 +60,9 @@ cert = x509.CertificateBuilder().subject_name(
 ).sign(private_key, SHA256(), default_backend())
 
 # Save the certificate to a file
-with open("cert.pem", "wb") as cert_file:
+with open(cert_path, "wb") as cert_file:
     cert_file.write(cert.public_bytes(serialization.Encoding.PEM))
 
-print("Self-signed certificate and private key generated successfully!")
+print(f"Self-signed certificate and private key generated successfully!")
+print(f"Private Key: {key_path}")
+print(f"Certificate: {cert_path}")

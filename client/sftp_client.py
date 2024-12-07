@@ -1,104 +1,106 @@
+import os
 import requests
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
-import os
 import logging
+import urllib3
 
-# Set up logging
-logging.basicConfig(
-    filename="client.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(message)s"
-)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Server URL
+# Configuration
 server_url = "https://localhost:5000"
+logging.basicConfig(filename="client.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 
-# AES Key and IV (Initialization Vector) for encryption
-AES_KEY = os.urandom(32)  # 256-bit key
-AES_IV = os.urandom(16)   # 128-bit IV
 
-# Encryption function
-def encrypt_file(input_file, output_file):
-    try:
-        cipher = Cipher(algorithms.AES(AES_KEY), modes.CBC(AES_IV), backend=default_backend())
-        padder = padding.PKCS7(algorithms.AES.block_size).padder()
+# Decrypt a file
+def decrypt_file(input_file, output_file, key_hex, iv_hex):
+    """Decrypts an encrypted file using the provided key and IV."""
+    key = bytes.fromhex(key_hex)  # Convert key from hex to bytes
+    iv = bytes.fromhex(iv_hex)    # Convert IV from hex to bytes
+    cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
+    unpadder = padding.PKCS7(algorithms.AES.block_size).unpadder()
 
-        with open(input_file, "rb") as infile, open(output_file, "wb") as outfile:
-            outfile.write(AES_IV)  # Write IV to the beginning of the file
-            encryptor = cipher.encryptor()
+    with open(input_file, "rb") as infile, open(output_file, "wb") as outfile:
+        decryptor = cipher.decryptor()
 
-            for chunk in iter(lambda: infile.read(1024), b""):
-                outfile.write(encryptor.update(padder.update(chunk)))
-            outfile.write(encryptor.update(padder.finalize()))
-            outfile.write(encryptor.finalize())
-        
-        logging.info(f"File '{input_file}' encrypted successfully as '{output_file}'.")
-    except Exception as e:
-        logging.error(f"Error encrypting file '{input_file}': {e}")
-        raise
+        for chunk in iter(lambda: infile.read(1024), b""):
+            decrypted_chunk = decryptor.update(chunk)
+            unpadded_chunk = unpadder.update(decrypted_chunk)
+            outfile.write(unpadded_chunk)
 
-# Decryption function
-def decrypt_file(input_file, output_file):
-    try:
-        with open(input_file, "rb") as infile, open(output_file, "wb") as outfile:
-            iv = infile.read(16)  # Read IV from the beginning of the file
-            cipher = Cipher(algorithms.AES(AES_KEY), modes.CBC(iv), backend=default_backend())
-            unpadder = padding.PKCS7(algorithms.AES.block_size).unpadder()
+        outfile.write(unpadder.update(decryptor.finalize()))
+        outfile.write(unpadder.finalize())
 
-            decryptor = cipher.decryptor()
-            for chunk in iter(lambda: infile.read(1024), b""):
-                outfile.write(unpadder.update(decryptor.update(chunk)))
-            outfile.write(unpadder.update(decryptor.finalize()))
-            outfile.write(unpadder.finalize())
-        
-        logging.info(f"File '{input_file}' decrypted successfully as '{output_file}'.")
-    except Exception as e:
-        logging.error(f"Error decrypting file '{input_file}': {e}")
-        raise
 
-# Upload file
+# Upload a file
 def upload_file(filename):
     try:
-        # Ensure the filename is not using an absolute path
-        encrypted_file = f"encrypted_{os.path.basename(filename)}"  # Using basename to get the file name only
-        encrypt_file(filename, encrypted_file)
-        logging.info(f"Encrypting file '{filename}' as '{encrypted_file}' for upload.")
-
         url = f"{server_url}/upload"
-        with open(encrypted_file, "rb") as f:
-            files = {"file": f}
-            response = requests.post(url, files=files, verify=False)
-        
-        logging.info(f"File '{encrypted_file}' uploaded to '{url}' with response: {response.json()}.")
-        print("Upload:", response.json())
+        with open(filename, "rb") as f:
+            response = requests.post(url, files={"file": f}, verify="server/cert/cert.pem")
+            response_data = response.json()
+
+        if response.status_code == 200:
+            logging.info(f"File uploaded successfully: {response_data}")
+            return response_data
+        else:
+            logging.error(f"Upload failed: {response.text}")
+            return None
     except Exception as e:
-        logging.error(f"Error uploading file '{filename}': {e}")
+        logging.error(f"Error uploading file: {e}")
         raise
 
-# Download file
-def download_file(filename):
+
+# Download a file
+def download_file(filename, file_info):
     try:
         url = f"{server_url}/download/{filename}"
+        logging.info(f"Requesting download for file: {filename} from {url}")
         response = requests.get(url, verify=False)
+
         if response.status_code == 200:
-            encrypted_file = f"downloaded_encrypted_{filename}"
+            # Save the downloaded encrypted file temporarily
+            encrypted_file = os.path.join(os.path.expanduser("~"), f"encrypted_{filename}")
             with open(encrypted_file, "wb") as f:
                 f.write(response.content)
-            
-            decrypted_file = f"decrypted_{filename}"
-            decrypt_file(encrypted_file, decrypted_file)
-            logging.info(f"File '{filename}' downloaded and decrypted as '{decrypted_file}'.")
-            print(f"File downloaded and decrypted as '{decrypted_file}'.")
+
+            logging.info(f"Encrypted file saved temporarily at: {encrypted_file}")
+
+            # Decrypt the file
+            decrypted_file = os.path.join(os.path.expanduser("~"), "Desktop", filename.replace(".enc", ""))
+            decrypt_file(encrypted_file, decrypted_file, file_info["key"], file_info["iv"])
+
+            # Clean up the temporary encrypted file
+            os.remove(encrypted_file)
+            logging.info(f"File downloaded and decrypted successfully: {decrypted_file}")
         else:
-            logging.error(f"Failed to download file '{filename}': {response.json()}")
-            print("Download:", response.json())
+            logging.error(f"Download failed: {response.status_code} - {response.text}")
+            raise Exception(f"Download failed with status code {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Network error during file download: {e}")
+        raise
     except Exception as e:
-        logging.error(f"Error downloading file '{filename}': {e}")
+        logging.error(f"Unexpected error during file download: {e}")
         raise
 
-# Example usage
+
 if __name__ == "__main__":
-    upload_file("test.txt")         # Replace with the path to your test file
-    download_file("test.txt")
+    original_filename = "C:/Users/Marwan/Desktop/TEST FILE.TXT"
+
+    try:
+        # Upload the file and get metadata
+        file_info = upload_file(original_filename)
+        if file_info:
+            try:
+                # Pass both filename and metadata to download_file
+                download_file(file_info["original_filename"], file_info)
+            except Exception as e:
+                logging.error(f"Error during download: {e}")
+                print("An error occurred during the download process.")
+        else:
+            logging.error("File upload failed. Cannot proceed to download.")
+            print("File upload failed. Please check the logs for more details.")
+    except Exception as e:
+        logging.error(f"Unexpected error: {e}")
+        print("An unexpected error occurred. Please check the logs.")
